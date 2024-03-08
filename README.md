@@ -1,3 +1,8 @@
+
+![powershell](https://github.com/igmtdev/dotfiles/assets/161505752/0bfc8ab6-374e-48e9-b7f4-995d3cd799dc)
+
+![powershell 2](https://github.com/igmtdev/dotfiles/assets/161505752/66082bb5-2504-4433-8dd4-61c56f063cc3)
+
 **1. Install [Scoop](https://scoop.sh/#/):**
 ```shell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
