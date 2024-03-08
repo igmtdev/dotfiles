@@ -4,6 +4,7 @@
 
 ![powershell 2](https://github.com/igmtdev/dotfiles/assets/161505752/66082bb5-2504-4433-8dd4-61c56f063cc3)
 
+# Setup
 **1. Install [Scoop](https://scoop.sh/#/):**
 ```shell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -141,3 +142,6 @@ Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -PredictionSource History
 ```
+
+# Troubleshoot
+**1. [Import Module Failed](https://www.sharepointdiary.com/2020/01/import-module-specified-module-not-loaded-because-no-valid-module-file-found-in-any-module-directory.html)**
