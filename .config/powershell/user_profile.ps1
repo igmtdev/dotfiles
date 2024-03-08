@@ -20,6 +20,22 @@ Set-Alias clr clear
 function get-gitclone { git clone $args[0] }
 Set-Alias -Name gcl -Value get-gitclone
 
+# git add .
+function get-gitadd-all { git add . }
+Set-Alias -Name gaa -Value get-gitadd-all
+
+# git add
+function get-gitadd { git add $args[0] }
+Set-Alias -Name ga -Value get-gitadd
+
+# git commit -m
+function get-gitcommit { git commit -m $args[0] }
+Set-Alias -Name gcmt -Value get-gitcommit
+
+# git push
+function get-gitpush { git push }
+Set-Alias -Name gpsh -Value get-gitpush
+
 # git branch --show-current
 function get-gitbranch-show-current { git branch --show-current }
 Set-Alias -Name gbsc -Value get-gitbranch-show-current
@@ -47,9 +63,6 @@ Set-Alias -Name gf -Value get-gitfetch
 # git status
 function get-gitstatus { git status }
 Set-Alias -Name gs -Value get-gitstatus
-
-# Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
-# Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 
 # Terminal Icons
 Import-Module -Name Terminal-Icons
