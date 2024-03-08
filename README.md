@@ -35,7 +35,7 @@ Set-Alias g git # git
 Set-Alias clr clear
 
 # git clone
-function get-gitclone { git clone }
+function get-gitclone { git clone $args[0] }
 Set-Alias -Name gcl -Value get-gitclone
 
 # git checkout
