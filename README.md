@@ -45,6 +45,10 @@ Set-Alias -Name gcl -Value get-gitclone
 function get-gitbranch-show-current { git branch --show-current }
 Set-Alias -Name gbsc -Value get-gitbranch-show-current
 
+# git branch -a
+function get-gitbranch-a { git branch -a }
+Set-Alias -Name gba -Value get-gitbranch-a
+
 # git checkout
 function get-gitcheckout { git checkout $args[0] }
 Set-Alias -Name gco -Value get-gitcheckout
