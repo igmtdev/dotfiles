@@ -21,7 +21,7 @@ function get-gitclone { git clone $args[0] }
 Set-Alias -Name gcl -Value get-gitclone
 
 # git checkout
-function get-gitcheckout { git checkout }
+function get-gitcheckout { git checkout $args[0] }
 Set-Alias -Name gco -Value get-gitcheckout
 
 # git checkout -b
