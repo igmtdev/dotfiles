@@ -59,7 +59,7 @@ function get-gitstatus { git status }
 Set-Alias -Name gs -Value get-gitstatus
 ```
 
-**6. Add that custom user profile to main powershell profile:**
+**6. Link the custom user profile to main powershell profile:**
 ```shell
 code $PROFILE.CurrentUserCurrentHost
 
@@ -73,6 +73,8 @@ nano $PROFILE.CurrentUserCurrentHost
 ```
 
 ```ps1
+
+// Initialize user_profile.ps1
 . $env:USERPROFILE\.config\powershell\user_profile.ps1
 ```
 
@@ -86,6 +88,10 @@ scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/downl
 
 # Prompt
 Import-Module posh-git
+
+// Initialize Oh My Posh Customization
+// (.\igmtdev.omp.json) located on (C:\Users\(YOUR USERNAME)\.config\powershell\)
+// You can copy a themes on (Oh My Posh) website
 $omp_config = Join-Path $PSScriptRoot ".\igmtdev.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 ```
@@ -98,6 +104,7 @@ Install-Module -Name Terminal-Icons -Repository PSGallery
 ```ps1
 // user_profile.ps1
 
+// Initialize Terminal Icons
 # Terminal Icons
 Import-Module -Name Terminal-Icons
 ```
@@ -115,6 +122,7 @@ Install-Module PSReadLine -AllowPrerelease -Force
 ```ps1
 // user_profile.ps1
 
+// Initialize PSReadLine
 # PSReadLine
 Import-Module PSReadLine
 Set-PSReadLineOption -EditMode Emacs
