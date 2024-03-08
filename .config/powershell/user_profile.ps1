@@ -20,6 +20,10 @@ Set-Alias clr clear
 function get-gitclone { git clone $args[0] }
 Set-Alias -Name gcl -Value get-gitclone
 
+# git branch --show-current
+function get-gitbranch-show-current { git branch --show-current }
+Set-Alias -Name gbsc -Value get-gitbranch-show-current
+
 # git checkout
 function get-gitcheckout { git checkout $args[0] }
 Set-Alias -Name gco -Value get-gitcheckout
