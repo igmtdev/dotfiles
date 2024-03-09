@@ -17,6 +17,10 @@ Set-Alias g git # git
 Set-Alias clr clear
 
 #! PNPM
+# pnpm create next-app (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
+function get-pnpm-create-next-app { pnpm create next-app $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm }
+Set-Alias -Name pcna -Value get-pnpm-create-next-app
+
 # pnpm install
 function get-pnpm-install-all { pnpm install }
 Set-Alias -Name pia -Value get-pnpm-install-all
@@ -46,6 +50,10 @@ function get-pnpm-run-start { pnpm run start }
 Set-Alias -Name prs -Value get-pnpm-run-start
 
 #! NPM
+# npx create-next-app@latest (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
+function get-npm-create-next-app { npx create-next-app@latest $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-npm }
+Set-Alias -Name ncna -Value get-npm-create-next-app
+
 # npm install
 function get-npm-install-all { npm install }
 Set-Alias -Name nia -Value get-npm-install-all
