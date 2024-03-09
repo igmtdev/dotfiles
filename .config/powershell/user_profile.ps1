@@ -16,7 +16,7 @@ Set-Alias ll ls # list
 Set-Alias g git # git
 Set-Alias clr clear
 
-# git clone
+# git clone (name)
 function get-gitclone { git clone $args[0] }
 Set-Alias -Name gcl -Value get-gitclone
 
@@ -24,11 +24,11 @@ Set-Alias -Name gcl -Value get-gitclone
 function get-gitadd-all { git add . }
 Set-Alias -Name gaa -Value get-gitadd-all
 
-# git add
+# git add (name)
 function get-gitadd { git add $args[0] }
 Set-Alias -Name ga -Value get-gitadd
 
-# git commit -m
+# git commit -m "name"
 function get-gitcommit { git commit -m $args[0] }
 Set-Alias -Name gcmt -Value get-gitcommit
 
@@ -44,11 +44,11 @@ Set-Alias -Name gbsc -Value get-gitbranch-show-current
 function get-gitbranch-a { git branch -a }
 Set-Alias -Name gba -Value get-gitbranch-a
 
-# git checkout
+# git checkout (name)
 function get-gitcheckout { git checkout $args[0] }
 Set-Alias -Name gco -Value get-gitcheckout
 
-# git checkout -b
+# git checkout -b (name)
 function get-gitcheckout-b { git checkout -b $args[0] }
 Set-Alias -Name gcb -Value get-gitcheckout-b
 
@@ -63,6 +63,10 @@ Set-Alias -Name gf -Value get-gitfetch
 # git status
 function get-gitstatus { git status }
 Set-Alias -Name gs -Value get-gitstatus
+
+# git branch -m (name)
+function get-gitbranch-m { git branch -m $args[0] }
+Set-Alias -Name gbm -Value get-gitbranch-m
 
 # Terminal Icons
 Import-Module -Name Terminal-Icons
