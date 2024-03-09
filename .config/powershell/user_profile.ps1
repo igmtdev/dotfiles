@@ -16,6 +16,65 @@ Set-Alias ll ls # list
 Set-Alias g git # git
 Set-Alias clr clear
 
+#! PNPM
+# pnpm install
+function get-pnpm-install-all { pnpm install }
+Set-Alias -Name pia -Value get-pnpm-install-all
+
+# pnpm update
+function get-pnpm-update { pnpm update }
+Set-Alias -Name pu -Value get-pnpm-update
+
+# pnpm install (name)
+function get-pnpm-install { pnpm install $args[0] }
+Set-Alias -Name pil -Value get-pnpm-install
+
+# pnpm install -D (name)
+function get-pnpm-install-d { pnpm install -D $args[0] }
+Set-Alias -Name pid -Value get-pnpm-install-d
+
+# pnpm run dev
+function get-pnpm-run-dev { pnpm run dev }
+Set-Alias -Name prd -Value get-pnpm-run-dev
+
+# pnpm run build
+function get-pnpm-run-build { pnpm run build }
+Set-Alias -Name prb -Value get-pnpm-run-build
+
+# pnpm run start
+function get-pnpm-run-start { pnpm run start }
+Set-Alias -Name prs -Value get-pnpm-run-start
+
+#! NPM
+# npm install
+function get-npm-install-all { npm install }
+Set-Alias -Name nia -Value get-npm-install-all
+
+# npm update
+function get-npm-update { npm update }
+Set-Alias -Name nu -Value get-npm-update
+
+# npm install (name)
+function get-npm-install { npm install $args[0] }
+Set-Alias -Name nil -Value get-npm-install
+
+# pnpm install -D (name)
+function get-npm-install-d { npm install -D $args[0] }
+Set-Alias -Name nid -Value get-npm-install-d
+
+# npm run dev
+function get-npm-run-dev { npm run dev }
+Set-Alias -Name nrd -Value get-npm-run-dev
+
+# npm run build
+function get-npm-run-build { npm run build }
+Set-Alias -Name nrb -Value get-npm-run-build
+
+# npm run start
+function get-npm-run-start { npm run start }
+Set-Alias -Name nrs -Value get-npm-run-start
+
+#! GIT
 # git clone (name)
 function get-gitclone { git clone $args[0] }
 Set-Alias -Name gcl -Value get-gitclone
