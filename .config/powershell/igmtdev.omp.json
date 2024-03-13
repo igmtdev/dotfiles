@@ -5,16 +5,16 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#f1184c",
-          "foreground": "#242424",
+          "background": "#d97706",
+          "foreground": "#171717",
           "powerline_symbol": "\ue0c4",
           "style": "powerline",
           "template": "\uf0e7",
           "type": "root"
         },
         {
-          "background": "#242424",
-          "foreground": "#33DD2D",
+          "background": "#171717",
+          "foreground": "#b91c1c",
           "properties": {
             "folder_separator_icon": "/",
             "style": "folder"
@@ -25,9 +25,9 @@
           "type": "path"
         },
         {
-          "background": "#242424",
+          "background": "#171717",
           "foreground": "#3A86FF",
-          "leading_diamond": "<transparent,#242424>\ue0b0</>",
+          "leading_diamond": "<transparent,#171717>\ue0b0</>",
           "properties": {
             "fetch_stash_count": true,
             "fetch_status": true,
@@ -47,9 +47,9 @@
           "type": "dotnet"
         },
         {
-          "background": "#8800dd",
-          "foreground": "#ffffff",
-          "leading_diamond": "<transparent,#8800dd>\ue0b0</>",
+          "background": "#d97706",
+          "foreground": "#171717",
+          "leading_diamond": "<transparent,#d97706>\ue0b0</>",
           "properties": {
             "style": "austin",
             "threshold": 1
@@ -62,7 +62,7 @@
         {
           "background": "#33DD2D",
           "background_templates": ["{{ if gt .Code 0 }}#f1184c{{ end }}"],
-          "foreground": "#242424",
+          "foreground": "#171717",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ueb05 ",
@@ -76,7 +76,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#f1184c",
+          "foreground": "#d97706",
           "style": "plain",
           "template": "\u279c ",
           "type": "text"
