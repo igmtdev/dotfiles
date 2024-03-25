@@ -50,6 +50,14 @@ function get-pnpm-run-start { pnpm run start }
 Set-Alias -Name prs -Value get-pnpm-run-start
 
 #! NPM
+# npm init
+function get-npm-init { npm init }
+Set-Alias -Name nii -Value get-npm-init
+
+# npx tsc --init
+function get-npx-tsc-init { npx tsc --init }
+Set-Alias -Name ntsci -Value get-npx-tsc-init
+
 # npx create-next-app@latest (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
 function get-npm-create-next-app { npx create-next-app@latest $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-npm }
 Set-Alias -Name ncna -Value get-npm-create-next-app
