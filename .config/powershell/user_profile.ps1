@@ -30,11 +30,11 @@ function get-pnpm-update { pnpm update }
 Set-Alias -Name pu -Value get-pnpm-update
 
 # pnpm install (name)
-function get-pnpm-install { pnpm install $args[0] }
+function get-pnpm-install { pnpm install $args }
 Set-Alias -Name pil -Value get-pnpm-install
 
 # pnpm install -D (name)
-function get-pnpm-install-d { pnpm install -D $args[0] }
+function get-pnpm-install-d { pnpm install -D $args }
 Set-Alias -Name pid -Value get-pnpm-install-d
 
 # pnpm run dev
@@ -71,11 +71,11 @@ function get-npm-update { npm update }
 Set-Alias -Name nu -Value get-npm-update
 
 # npm install (name)
-function get-npm-install { npm install $args[0] }
+function get-npm-install { npm install $args }
 Set-Alias -Name nil -Value get-npm-install
 
 # pnpm install -D (name)
-function get-npm-install-d { npm install -D $args[0] }
+function get-npm-install-d { npm install -D $args }
 Set-Alias -Name nid -Value get-npm-install-d
 
 # npm run dev
@@ -92,7 +92,7 @@ Set-Alias -Name nrs -Value get-npm-run-start
 
 #! GIT
 # git clone (name)
-function get-gitclone { git clone $args[0] }
+function get-gitclone { git clone $args }
 Set-Alias -Name gcl -Value get-gitclone
 
 # git add .
@@ -100,11 +100,11 @@ function get-gitadd-all { git add . }
 Set-Alias -Name gaa -Value get-gitadd-all
 
 # git add (name)
-function get-gitadd { git add $args[0] }
+function get-gitadd { git add $args }
 Set-Alias -Name ga -Value get-gitadd
 
 # git commit -m "name"
-function get-gitcommit { git commit -m $args[0] }
+function get-gitcommit { git commit -m $args }
 Set-Alias -Name gcmt -Value get-gitcommit
 
 # git push
@@ -120,11 +120,11 @@ function get-gitbranch-a { git branch -a }
 Set-Alias -Name gba -Value get-gitbranch-a
 
 # git checkout (name)
-function get-gitcheckout { git checkout $args[0] }
+function get-gitcheckout { git checkout $args }
 Set-Alias -Name gco -Value get-gitcheckout
 
 # git checkout -b (name)
-function get-gitcheckout-b { git checkout -b $args[0] }
+function get-gitcheckout-b { git checkout -b $args }
 Set-Alias -Name gcb -Value get-gitcheckout-b
 
 # git pull
@@ -140,7 +140,7 @@ function get-gitstatus { git status }
 Set-Alias -Name gs -Value get-gitstatus
 
 # git branch -m (name)
-function get-gitbranch-m { git branch -m $args[0] }
+function get-gitbranch-m { git branch -m $args }
 Set-Alias -Name gbm -Value get-gitbranch-m
 
 # Terminal Icons
