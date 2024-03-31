@@ -7,7 +7,7 @@
 # oh-my-posh init pwsh --config $PROMT_CONFIG | Invoke-Expression
 
 # Prompt
-Import-Module posh-git
+# Import-Module posh-git
 $omp_config = Join-Path $PSScriptRoot ".\igmtdev.omp.json"
 oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
 
@@ -40,6 +40,14 @@ Set-Alias -Name pid -Value get-pnpm-install-d
 # pnpm run dev
 function get-pnpm-run-dev { pnpm run dev }
 Set-Alias -Name prd -Value get-pnpm-run-dev
+
+# pnpm run start:dev
+function get-pnpm-run-start-dev { pnpm run start:dev }
+Set-Alias -Name prsd -Value get-pnpm-run-start-dev
+
+# pnpm run lint
+function get-pnpm-run-lint { pnpm run lint }
+Set-Alias -Name prl -Value get-pnpm-run-lint
 
 # pnpm run build
 function get-pnpm-run-build { pnpm run build }
@@ -81,6 +89,14 @@ Set-Alias -Name nid -Value get-npm-install-d
 # npm run dev
 function get-npm-run-dev { npm run dev }
 Set-Alias -Name nrd -Value get-npm-run-dev
+
+# npm run start:dev
+function get-npm-run-start-dev { npm run start:dev }
+Set-Alias -Name nrsd -Value get-npm-run-start-dev
+
+# npm run lint
+function get-npm-run-lint { npm run lint }
+Set-Alias -Name nrl -Value get-nnpm-run-lint
 
 # npm run build
 function get-npm-run-build { npm run build }
