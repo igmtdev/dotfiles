@@ -42,6 +42,10 @@ Set-Alias -Name npi -Value get-npx-prisma-init
 function get-npx-prisma-migrate-dev-name { npx prisma migrate dev --name $args }
 Set-Alias -Name npmd -Value get-npx-prisma-migrate-dev-name
 
+# npx prisma generate
+function get-npx-prisma-generate { npx prisma generate }
+Set-Alias -Name npg -Value get-npx-prisma-generate
+
 #! PNPM
 # pnpm create next-app (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
 function get-pnpm-create-next-app { pnpm create next-app $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm }
