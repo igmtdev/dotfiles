@@ -16,6 +16,23 @@ Set-Alias ll ls # list
 Set-Alias g git # git
 Set-Alias clr clear
 
+#! NEST
+# nest new (name)
+function get-nest-new { nest new $args }
+Set-Alias -Name nn -Value get-nest-new
+
+# nest generate module (name)
+function get-nest-generate-module { nest generate module $args }
+Set-Alias -Name ngm -Value get-nest-generate-module
+
+# nest generate service (name)
+function get-nest-generate-service { nest generate service $args }
+Set-Alias -Name ngs -Value get-nest-generate-service
+
+# nest generate controller (name)
+function get-nest-generate-controllers { nest generate controller $args }
+Set-Alias -Name ngc -Value get-nest-generate-controller
+
 #! PNPM
 # pnpm create next-app (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
 function get-pnpm-create-next-app { pnpm create next-app $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm }
