@@ -37,6 +37,10 @@ Set-Alias -Name ngs -Value get-nest-generate-service
 function get-nest-generate-controllers { nest generate controller $args }
 Set-Alias -Name ngc -Value get-nest-generate-controller
 
+# nest generate middleware (name)
+function get-nest-generate-middleware { nest generate middleware $args }
+Set-Alias -Name ngmw -Value get-nest-generate-middleware
+
 #! PRISMA
 # npx prisma init
 function get-npx-prisma-init { npx prisma init }
