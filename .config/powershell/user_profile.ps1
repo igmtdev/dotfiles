@@ -49,6 +49,10 @@ Set-Alias -Name ngg -Value get-nest-generate-guard
 function get-nest-generate-filter { nest generate filter $args }
 Set-Alias -Name ngf -Value get-nest-generate-filter
 
+# nest generate decorator
+function get-nest-generate-decorator { nest generate decorator $args }
+Set-Alias -Name ngf -Value get-nest-generate-decorator
+
 #! PRISMA
 # npx prisma init
 function get-npx-prisma-init { npx prisma init }
