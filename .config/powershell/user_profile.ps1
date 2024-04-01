@@ -41,6 +41,10 @@ Set-Alias -Name ngc -Value get-nest-generate-controller
 function get-nest-generate-middleware { nest generate middleware $args }
 Set-Alias -Name ngmw -Value get-nest-generate-middleware
 
+# nest generate guard (name)
+function get-nest-generate-guard { nest generate guard $args }
+Set-Alias -Name ngg -Value get-nest-generate-guard
+
 #! PRISMA
 # npx prisma init
 function get-npx-prisma-init { npx prisma init }
@@ -86,6 +90,10 @@ Set-Alias -Name prsd -Value get-pnpm-run-start-dev
 # pnpm run lint
 function get-pnpm-run-lint { pnpm run lint }
 Set-Alias -Name prl -Value get-pnpm-run-lint
+
+# pnpm run format
+function get-pnpm-run-format { pnpm run format }
+Set-Alias -Name prf -Value get-pnpm-run-format
 
 # pnpm run build
 function get-pnpm-run-build { pnpm run build }
@@ -135,6 +143,10 @@ Set-Alias -Name nrsd -Value get-npm-run-start-dev
 # npm run lint
 function get-npm-run-lint { npm run lint }
 Set-Alias -Name nrl -Value get-nnpm-run-lint
+
+# npm run format
+function get-npm-run-format { npm run format }
+Set-Alias -Name prf -Value get-npm-run-format
 
 # npm run build
 function get-npm-run-build { npm run build }
