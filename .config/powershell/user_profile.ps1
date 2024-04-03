@@ -70,6 +70,10 @@ Set-Alias -Name npg -Value get-npx-prisma-generate
 function get-npx-prisma-studio { npx prisma studio }
 Set-Alias -Name nps -Value get-npx-prisma-studio
 
+# npx prisma db seed
+function get-npx-prisma-db-seed { npx prisma db seed }
+Set-Alias -Name npdbs -Value get-npx-prisma-db-seed
+
 #! PNPM
 # pnpm create next-app (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
 function get-pnpm-create-next-app { pnpm create next-app $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm }
@@ -77,19 +81,23 @@ Set-Alias -Name pcna -Value get-pnpm-create-next-app
 
 # pnpm install
 function get-pnpm-install-all { pnpm install }
-Set-Alias -Name pia -Value get-pnpm-install-all
+Set-Alias -Name pil -Value get-pnpm-install-all
 
 # pnpm update
 function get-pnpm-update { pnpm update }
 Set-Alias -Name pu -Value get-pnpm-update
 
 # pnpm install (name)
-function get-pnpm-install { pnpm install $args }
-Set-Alias -Name pil -Value get-pnpm-install
+function get-pnpm-install { pnpm add $args }
+Set-Alias -Name pia -Value get-pnpm-install
 
 # pnpm install -D (name)
-function get-pnpm-install-d { pnpm install -D $args }
+function get-pnpm-install-d { pnpm add -D $args }
 Set-Alias -Name pid -Value get-pnpm-install-d
+
+# pnpm remove (name)
+function get-pnpm-remove { pnpm remove $args }
+Set-Alias -Name pr -Value get-pnpm-remove
 
 # pnpm run dev
 function get-pnpm-run-dev { pnpm run dev }
@@ -130,7 +138,7 @@ Set-Alias -Name ncna -Value get-npm-create-next-app
 
 # npm install
 function get-npm-install-all { npm install }
-Set-Alias -Name nia -Value get-npm-install-all
+Set-Alias -Name nil -Value get-npm-install-all
 
 # npm update
 function get-npm-update { npm update }
@@ -138,11 +146,15 @@ Set-Alias -Name nu -Value get-npm-update
 
 # npm install (name)
 function get-npm-install { npm install $args }
-Set-Alias -Name nil -Value get-npm-install
+Set-Alias -Name nia -Value get-npm-install
 
-# pnpm install -D (name)
+# npm install -D (name)
 function get-npm-install-d { npm install -D $args }
 Set-Alias -Name nid -Value get-npm-install-d
+
+# npm uninstall (name)
+function get-npm-uninstall { npm uninstall $args }
+Set-Alias -Name nu -Value get-npm-uninstall
 
 # npm run dev
 function get-npm-run-dev { npm run dev }
