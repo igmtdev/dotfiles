@@ -34,7 +34,7 @@ function get-nest-generate-service { nest generate service $args }
 Set-Alias -Name ngs -Value get-nest-generate-service
 
 # nest generate controller (name)
-function get-nest-generate-controllers { nest generate controller $args }
+function get-nest-generate-controller { nest generate controller $args }
 Set-Alias -Name ngc -Value get-nest-generate-controller
 
 # nest generate middleware (name)
