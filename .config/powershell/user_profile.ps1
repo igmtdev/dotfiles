@@ -21,8 +21,8 @@ Set-Alias clr clear
 function get-nest-new { nest new $args }
 Set-Alias -Name nn -Value get-nest-new
 
-# nest generate resource (name)
-function get-nest-generate-resource { nest generate resource $args }
+# nest generate resource (name) --no-spec
+function get-nest-generate-resource { nest generate resource $args --no-spec }
 Set-Alias -Name ngr -Value get-nest-generate-resource
 
 # nest generate module (name)
@@ -30,11 +30,11 @@ function get-nest-generate-module { nest generate module $args }
 Set-Alias -Name ngm -Value get-nest-generate-module
 
 # nest generate service (name)
-function get-nest-generate-service { nest generate service $args }
+function get-nest-generate-service { nest generate service $args --no-spec }
 Set-Alias -Name ngs -Value get-nest-generate-service
 
 # nest generate controller (name)
-function get-nest-generate-controller { nest generate controller $args }
+function get-nest-generate-controller { nest generate controller $args --no-spec }
 Set-Alias -Name ngc -Value get-nest-generate-controller
 
 # nest generate middleware (name)
