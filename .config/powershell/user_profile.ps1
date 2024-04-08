@@ -75,8 +75,8 @@ function get-npx-prisma-db-seed { npx prisma db seed }
 Set-Alias -Name npdbs -Value get-npx-prisma-db-seed
 
 #! PNPM
-# pnpm create next-app (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
-function get-pnpm-create-next-app { pnpm create next-app $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm }
+# pnpm create next-app (name) --ts --eslint --tailwind --app --src-dir --import-alias "@/*" --use-pnpm
+function get-pnpm-create-next-app { pnpm create next-app $args[0] --ts --eslint --tailwind --app --src-dir --import-alias "@/*" --use-pnpm }
 Set-Alias -Name pcna -Value get-pnpm-create-next-app
 
 # pnpm install
@@ -132,8 +132,8 @@ Set-Alias -Name nii -Value get-npm-init
 function get-npx-tsc-init { npx tsc --init }
 Set-Alias -Name ntsci -Value get-npx-tsc-init
 
-# npx create-next-app@latest (name) --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-pnpm
-function get-npm-create-next-app { npx create-next-app@latest $args[0] --ts --eslint --no-tailwind --app --no-src-dir --import-alias "@/*" --use-npm }
+# npx create-next-app@latest (name) --ts --eslint --tailwind --app --src-dir --import-alias "@/*" --use-npm
+function get-npm-create-next-app { npx create-next-app@latest $args[0] --ts --eslint --tailwind --app --src-dir --import-alias "@/*" --use-npm }
 Set-Alias -Name ncna -Value get-npm-create-next-app
 
 # npm install
